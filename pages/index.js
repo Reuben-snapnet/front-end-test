@@ -14,7 +14,7 @@ export const Home = ({articles}) => {
 
   const displayArticles = articles.slice(pagesVisited, pagesVisited + articlesPerPage).map((article) => {
     return (
-      <div  key={article.id} className="p-3">
+      <div  key={article.id} className="p-3 mb-10">
           <Feeds article={article} />
       </div>
     )
