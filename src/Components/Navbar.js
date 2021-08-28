@@ -10,7 +10,7 @@ const Navbar = () => {
         activeClassName="is-active"
         exact={true}
       >
-        Home
+        Events
       </NavLink>
       <NavLink to="/about" className="text-lg font-semibold nav_link" activeClassName="is-active">
         About
