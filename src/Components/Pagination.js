@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { EventContext } from "./EventProvider";
 
 const Pagination = () => {
-  const [currentEvents, , postsPerPage, paginate, setCurrentPage] = useContext(
+  const [currentEvents, , postsPerPage, setCurrentPage] = useContext(
     EventContext
   );
   const pageNumbers = [];
@@ -10,8 +10,6 @@ const Pagination = () => {
   for (let i = 1; i <= Math.ceil(currentEvents.length / postsPerPage); i++) {
     pageNumbers.push(i);
   }
-
-  console.log(paginate);
 
   return (
     <div className="flex justify-center">

@@ -27,12 +27,9 @@ export const EventProvider = (props) => {
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentEvents = events.slice(indexOfFirstPost, indexOfLastPost);
 
-  // Change page
-  const paginate = (pageNumber) => setCurrentPage(pageNumber);
-
   return (
     <EventContext.Provider
-      value={[currentEvents, loading, postsPerPage, paginate, setCurrentPage]}
+      value={[currentEvents, loading, postsPerPage, setCurrentPage]}
     >
       {props.children}
     </EventContext.Provider>
