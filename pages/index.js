@@ -24,7 +24,6 @@ export const Home = ({articles}) => {
         setPageNumber(selected);
     }
 
-    console.log(pageNumber)
 
     return(
         <div className="flex text-center flex-col space-y-10 p-10 min-h-screen justify-center items-center">
