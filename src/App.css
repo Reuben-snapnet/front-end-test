@@ -1,0 +1,40 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.App {
+  width: 500px;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+}
+
+.pages {
+  width: 300px;
+  margin: 0 auto;
+}
+
+a {
+  color: #4a4a4a;
+}
+
+.event-item {
+  border-radius: 15px;
+  border: 1px solid #4a4a4a;
+}
+
+.event-item:hover {
+  background: #e9e9e9;
+  transition: all 0.2s;
+}
+
+.event-desc {
+  text-align: center !important;
+}
