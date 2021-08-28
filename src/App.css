@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bgPrimary: #ede7f6;
+}
+
+body {
+  background: var(--bgPrimary);
+}
+
+/* Navbar */
+.nav_link::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  display: block;
+  background-color: #fff;
+  margin-top: 4px;
+  transition: all 0.3s;
+}
+
+.nav_link:hover::after,
+.nav_link.is-active::after {
+  width: 100%;
+  transition: all 0.3s;
+}
