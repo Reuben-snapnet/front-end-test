@@ -29,8 +29,8 @@ const Events = () => {
               className="my-4 py-3 border rounded-md px-4 py-2 bg-white shadow cursor-pointer hover:shadow-xl"
             >
               <p>
-                <span>{time}</span>
-                <span className="pl-2">{date}</span>
+                <span>{date},</span>
+                <span className="pl-2">{time}</span>
               </p>
               <h2 className="font-semibold text-xl pt-2">{title}</h2>
             </Link>
